@@ -134,16 +134,16 @@ class Seq2Seq:
 
 
 #test
-import boto3
-import json
-bucket='culturehub'
-configuration_key ='seqtoseq/config_beijing.json'
-configuration_location = 's3://{}/{}'.format(bucket, configuration_key)
+#import boto3
+#import json
+#bucket='culturehub'
+#configuration_key ='seqtoseq/config_beijing.json'
+#configuration_location = 's3://{}/{}'.format(bucket, configuration_key)
 
-configuration_string = boto3.resource('s3').Object(bucket, configuration_key).get()['Body'].read().decode('utf-8')
+#configuration_string = boto3.resource('s3').Object(bucket, configuration_key).get()['Body'].read().decode('utf-8')
 
 #print(configuration_string)
 
-config = json.loads(configuration_string)
+#config = json.loads(configuration_string)
 
-seq2seq  = Seq2Seq(config)
+#seq2seq  = Seq2Seq(config)
