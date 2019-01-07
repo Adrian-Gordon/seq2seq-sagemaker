@@ -1,0 +1,2 @@
+model_checkpoint_path: "beijing-seq2seq0"
+all_model_checkpoint_paths: "beijing-seq2seq0"
